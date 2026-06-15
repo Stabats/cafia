@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Cafia",
-  url: "https://charadex-team.github.io/charadex-v1.0/",
+  url: "https://stabats.github.io/cafia/",
   description: `A roleplay group.`
 }
 
