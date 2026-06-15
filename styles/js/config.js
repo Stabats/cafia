@@ -17,7 +17,7 @@ let charadex = {};
 charadex.site = {
   title: "Cafia",
   url: "https://stabats.github.io/cafia/",
-  description: `A roleplay group.`
+  description: `A murder mystery roleplay.`
 }
 
 /* ==================================================================== */
@@ -38,14 +38,15 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
+    players:       "players",
   },
 
   options: {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
-    statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
+    statuses: ['All', 'Active', 'Departed', '???'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'Dog', 'Cat', 'Bunny'],
+    species: ['All', 'NPO', 'PC'],
     itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
 
@@ -252,6 +253,54 @@ charadex.page.staff = {
   },
 
 };
+
+/* Players
+/* --------------------------------------------------------------- */
+charadex.page.players = {
+
+  sheetPage: charadex.sheet.pages.players,
+  sitePage: 'inventories',
+  dexSelector: 'charadex',
+  profileProperty: 'username',
+
+  sort: {
+    toggle: false,
+    key: "username",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: false,
+    bottomToggle: false,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Username']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
 
 
 /* FAQ
