@@ -15,9 +15,9 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Cafia",
-  url: "https://stabats.github.io/cafia/",
-  description: `A murder mystery roleplay.`
+  title: "Golden Search",
+  url: "https://stabats.github.io/Golden-Search/",
+  description: `An ARPG about (maybe) saving the world.`
 }
 
 /* ==================================================================== */
@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "13VvVaBnGW3p6n-t7BSPnsmMa3vSBuI7n1cQay2w8AWQ",
+  id: "10LJ9oNXrhu4-7gg07eWYRzuVVpbK3bq1X2GcS3yYrVg",
 
   pages: {
     masterlist:    "masterlist",
@@ -34,22 +34,24 @@ charadex.sheet = {
     inventory:     "inventory",
     inventoryLog:  "inventory log",
     items:         "items",
-    traits:        "traits",
+    powers:        "powers",
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
-    players:       "players",
+    seekers:       "seekers",
+    badges:        "badges",
   },
 
   options: {
 
-    jobs: ['All', 'Job1', 'Job2'],
-    statuses: ['All', 'Active', 'Departed', '???'],
+    designTypes: [],
+    statuses: ['All', 'Active', 'Haitus', 'Inactive'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'PC', 'NPC'],
-    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
-
+    species: ['All', 'PC', 'NPC', 'BPNC'],
+    itemTypes: ['All', 'Currency', 'Ingredents', 'Plots', 'Homes', 'Decor', 'Misc'],
+    elementTypes: ['All', 'Aether', 'Air', 'Earth', 'Fire', 'Water'],
+    level: ['All', '1', '2', '3', '4', '5', '6'],
+    badgeTypes: ['All', 'Pinkies', 'Roleplay', 'Magic', 'Quests', 'Home'],
   }
 
 }
@@ -109,15 +111,14 @@ charadex.page.items = {
 
 };
 
-
-/* Traits
+/* Badge Catalogue
 /* --------------------------------------------------------------- */
-charadex.page.traits = {
+charadex.page.badges = {
 
-  sheetPage: charadex.sheet.pages.traits,
-  sitePage: 'traits',
+  sheetPage: charadex.sheet.pages.badges,
+  sitePage: 'badges',
   dexSelector: 'charadex',
-  profileProperty: 'trait',
+  profileProperty: 'badge',
 
   sort: {
     toggle: true,
@@ -135,7 +136,7 @@ charadex.page.traits = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.traitTypes,
+      'Type': charadex.sheet.options.badgeTypes,
       'Rarity': charadex.sheet.options.rarity,
     }
   },
@@ -143,13 +144,59 @@ charadex.page.traits = {
   fauxFolder: {
     toggle: true,
     folderProperty: 'Type',
-    parameters: charadex.sheet.options.traitTypes,
+    parameters: charadex.sheet.options.badgeTypes,
   },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
+    parameters: ['All', 'Badge']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
+
+/* powers
+/* --------------------------------------------------------------- */
+charadex.page.powers = {
+
+  sheetPage: charadex.sheet.pages.powers,
+  sitePage: 'powers',
+  dexSelector: 'charadex',
+  profileProperty: 'power',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 24,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Type',
+    parameters: charadex.sheet.options.elementTypes,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Type', 'Level']
   },
 
   prevNext: {
@@ -254,11 +301,11 @@ charadex.page.staff = {
 
 };
 
-/* Players
+/* Staff
 /* --------------------------------------------------------------- */
-charadex.page.players = {
+charadex.page.seekers = {
 
-  sheetPage: charadex.sheet.pages.players,
+  sheetPage: charadex.sheet.pages.seekers,
   sitePage: 'inventories',
   dexSelector: 'charadex',
   profileProperty: 'username',
@@ -300,8 +347,6 @@ charadex.page.players = {
   },
 
 };
-
-
 
 /* FAQ
 /* --------------------------------------------------------------- */
@@ -359,7 +404,7 @@ charadex.page.masterlist = {
   sheetPage: charadex.sheet.pages.masterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'job',
+  profileProperty: 'design',
 
   sort: {
     toggle: true,
@@ -377,7 +422,6 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Job': charadex.sheet.options.jobs,
       'Status': charadex.sheet.options.statuses,
       'Rarity': charadex.sheet.options.rarity,
     }
@@ -392,7 +436,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Job', 'Owner', 'Traits']
+    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Powers']
   },
 
   prevNext: {
@@ -407,7 +451,7 @@ charadex.page.masterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'job',
+      profileProperty: 'design',
       profileToggle: false,
 
       sort: {
@@ -507,8 +551,8 @@ charadex.page.inventory = {
       sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'jobs',
-      profileProperty: 'job',
+      dexSelector: 'designs',
+      profileProperty: 'design',
       profileToggle: false,
 
     }
@@ -567,6 +611,24 @@ charadex.page.index = {
     dexSelector: 'staff',
     amount: 6,
   },
+
+  designs: {
+    ... charadex.page.masterlist,
+    dexSelector: 'design',
+    amount: 4,
+  },
+
+  badges: {
+    ... charadex.page.badges,
+      dexSelector: 'badge',
+      amount: 6,
+  },
+
+  seekers: {
+    ... charadex.page.seekers,
+      dexSelector: 'seeker',
+      amount: 6,
+  }
 
 };
 
