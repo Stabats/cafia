@@ -6,10 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-  <!-- ----------------------------------------------------------------- -->
   <!-- About Your Site                                                   -->
-  <!-- ----------------------------------------------------------------- -->
+
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
   <title>Cafia Characters</title>
   <meta name="title" content="Cafia Masterlist" />
@@ -23,9 +21,7 @@
   <meta name="robots" content="noimageai">
 
 
-  <!-- ----------------------------------------------------------------- -->
   <!-- Styles                                                            -->
-  <!-- ----------------------------------------------------------------- -->
 
   <!-- Bootstrap CSS -->
   <!-- Using Bootstrap 4.5 because its closest to Toyhou.se's current version -->
@@ -55,28 +51,20 @@
 <body id="charadex-body">
 
 
-  <!-- --------------------------------------------------------------------
-  <-- Header
-  <-------------------------------------------------------------------- -->
+  <!-- Header -->
   <div class="load-html" id="header" data-source="includes/header.html"></div>
 
-
-  <!-- --------------------------------------------------------------------
-  <-- Main List
-  <-------------------------------------------------------------------- -->
+  <!-- Main List -->
   <div class="container" id="main-container">
     <div id="charadex-gallery">
 
-      <!-- Top Card Container
-      <!-- ----------------------------------------------------------------- -->
+      <!-- Top Card Container -->
       <div class="card p-md-5 p-4 mb-4">
 
-        <!-- Title
-        <!-- --------------------------------------------------------------- -->
+        <!-- Title -->
         <h3 class="mb-0"><a href="masterlist.html">Character Masterlist</a></h3>
 
-        <!-- Faux Folders
-        <!-- --------------------------------------------------------------- -->
+        <!-- Faux Folders -->
         <div style="display:none;" id="charadex-folder-container">
           <hr>
           <div class="row no-gutters m-n1" id="charadex-folders"></div>
@@ -88,8 +76,7 @@
           </div>
         </div>
 
-        <!-- Filters
-        <!-- --------------------------------------------------------------- -->
+        <!-- Filters -->
         <div style="display:none;" id="charadex-filter-container">
           <hr>
           <div class="row no-gutters m-n1" id="charadex-filters"></div>
@@ -102,8 +89,7 @@
           </div>
         </div>
 
-        <!-- Search
-        <!-- --------------------------------------------------------------- -->
+        <!-- Search -->
         <div style="display:none;" id="charadex-search-container">
           <hr>
           <div class="row no-gutters m-n1">
@@ -118,8 +104,7 @@
           </div>
         </div>
 
-        <!-- Pagination
-        <!-- --------------------------------------------------------------- -->
+        <!-- Pagination -->
         <div style="display: none;" class="charadex-pagination-container">
           <hr class="mb-4 mt-4">
           <div class="nav d-flex justify-content-center mb-n4">
@@ -129,8 +114,7 @@
           </div>
         </div>
 
-        <!-- Prev & Next Topbar
-        <!-- --------------------------------------------------------------- -->
+        <!-- Prev & Next Topbar -->
         <div style="display: none;" id="charadex-prevnext-container">
           <hr>
           <div class="row no-gutters px-2 text-uppercase">
@@ -145,12 +129,10 @@
 
       </div>
 
-      <!-- List Items Render Here
-      <!-- --------------------------------------------------------------- -->
+      <!-- List Items Render Here -->
       <div class="row no-gutters charadex-list softload m-n2"></div>
 
-      <!-- Pagination
-      <!-- --------------------------------------------------------------- -->
+      <!-- Pagination -->
       <div style="display: none;" class="charadex-pagination-container">
         <div class="card px-3 py-1 mt-4">
           <div class="nav d-flex justify-content-center">
@@ -164,20 +146,14 @@
     </div>
   </div>
 
-  <!-- --------------------------------------------------------------------
-  <-- Footer
-  <-------------------------------------------------------------------- -->
+  <!-- Footer -->
   <div class="load-html" id="footer" data-source="includes/footer.html"></div>
 
-  <!-- --------------------------------------------------------------------
-  <-- Repeat Items
-  <-- Do not remove 'display:none;'
-  <-------------------------------------------------------------------- -->
+  <!-- Repeat Items -->
+  <!-- Do not remove 'display:none;' -->
   <div style="display:none;">
 
-
-    <!-- Gallery Items
-    <!-- --------------------------------------------------------------- -->
+    <!-- Gallery Items -->
     <div class="col-lg-3 col-sm-6 p-2" id="charadex-gallery-item">
       <div class="card h-100">
 
@@ -201,9 +177,7 @@
       </div>
     </div>
 
-
-    <!-- Gallery Profile
-    <!-- --------------------------------------------------------------- -->
+    <!-- Gallery Profile-->
     <div class="col-12 p-2" id="charadex-profile">
       <div class="card">
 
@@ -218,9 +192,7 @@
           <img class="image img-fluid" src="">
         </div>
 
-
-        <!-- Nav Tabs
-        <!-- ----------------------------------------------------------- -->
+        <!-- Nav Tabs -->
         <hr class="my-0">
         <ul class="nav row n-gutters m-n1 py-4 px-md-5 px-4" id="profile-tabs" role="tablist">
           <li class="col p-1 nav-item" role="presentation">
@@ -234,13 +206,10 @@
         </ul>
         <hr class="my-0">
 
-
-        <!-- Main Info
-        <!-- ----------------------------------------------------------- -->
+        <!-- Main Info -->
         <div class="p-md-5 p-4 tab-content">
 
-          <!-- Main Profile
-          <!-- ----------------------------------------------------------- -->
+          <!-- Main Profile -->
           <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             <h4 class="text-primary">Profile</h4>
             <div class="row no-gutters m-n2">
@@ -268,21 +237,21 @@
 
                   <!-- Item -->
                   <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Gift Art</b>
-                    <span class="art"></span>
+                    <b class="text-muted col-md-5 col-6">Age</b>
+                    <span class="age"></span>
                   </div>
 
                   <!-- Item -->
                   <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Gift Writing</b>
-                    <span class="writing"></span>
+                    <b class="text-muted col-md-5 col-6">Job</b>
+                    <span class="jobs"></span>
                   </div>
                   
                   <hr>
 
                   <!-- Item -->
                   <div>
-                    <b class="text-muted" style="text-align:center;">Notes</b>
+                    <b class="text-muted" style="text-align:center;">Personality</b>
                     <div class="px-4 cd-text-pre notes"></div>
                   </div>
 
@@ -310,12 +279,6 @@
                     <a class="designer designerlink"></a>
                   </div>
 
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Biography</b>
-                    <a class="traits traitslink"></a>
-                  </div>
-
                   <hr>
 
                   <!-- Item -->
@@ -329,20 +292,15 @@
                     <b class="text-muted col-md-5 col-6">Strength</b>
                     <span class="str"></span>
                   </div>
+                  
+                  <div class="d-flex no-gutters mb-2">
+                    <b class="text-muted col-md-5 col-6">Intelligence</b>
+                    <span class="int"></span>
+                  </div>
 
                   <div class="d-flex no-gutters mb-2">
                     <b class="text-muted col-md-5 col-6">Charisma</b>
                     <span class="cha"></span>
-                  </div>
-
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Will</b>
-                    <span class="will"></span>
-                  </div>
-
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Socability</b>
-                    <span class="soc"></span>
                   </div>
                   
                 </div>
@@ -352,14 +310,12 @@
           </div>
           
           
-          <!-- Logs
-          <!-- ----------------------------------------------------------- -->
+          <!-- Logs -->
           <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab" tabindex="0">
             <h4 class="text-primary">Transaction Log</h4>
             <div class="card bg-faded p-4" id="log-gallery">
 
               <!-- List -->
-              <!-- --------------------------------------------------------------- -->
               <div class="row no-gutters">
                 <div class="col-md-3"><b>Timestamp</b></div>
                 <div class="col-md-9"><b>Reason</b></div>
@@ -368,7 +324,6 @@
               <div class="log-list"></div>
 
               <!-- List Item -->
-              <!-- --------------------------------------------------------------- -->
               <div style="display: none;">
                 <div class="row no-gutters" id="log-gallery-item">
                   <div class="col-md-3"><span class="timestamp"></span></div>
@@ -376,8 +331,7 @@
                 </div>
               </div>
 
-              <!-- Pagination
-              <!-- --------------------------------------------------------------- -->
+              <!-- Pagination -->
               <div style="display: none;" class="log-pagination-container">
                 <hr>
                 <div class="nav d-flex justify-content-center mb-n4">
@@ -402,9 +356,7 @@
 
   </div>
 
-  <!-- ----------------------------------------------------------------- -->
   <!-- JS                                                                -->
-  <!-- ----------------------------------------------------------------- -->
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
