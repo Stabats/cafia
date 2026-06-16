@@ -359,7 +359,7 @@ charadex.page.masterlist = {
   sheetPage: charadex.sheet.pages.masterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'design',
+  profileProperty: 'job',
 
   sort: {
     toggle: true,
@@ -377,7 +377,7 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.jobs,
+      'Job': charadex.sheet.options.jobs,
       'Status': charadex.sheet.options.statuses,
       'Rarity': charadex.sheet.options.rarity,
     }
@@ -392,7 +392,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'ID', 'Job', 'Owner', 'Traits']
   },
 
   prevNext: {
@@ -407,7 +407,7 @@ charadex.page.masterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'job',
       profileToggle: false,
 
       sort: {
@@ -507,8 +507,8 @@ charadex.page.inventory = {
       sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'designs',
-      profileProperty: 'design',
+      dexSelector: 'jobs',
+      profileProperty: 'job',
       profileToggle: false,
 
     }
@@ -567,12 +567,6 @@ charadex.page.index = {
     dexSelector: 'staff',
     amount: 6,
   },
-
-  designs: {
-    ... charadex.page.masterlist,
-    dexSelector: 'design',
-    amount: 4,
-  }
 
 };
 
