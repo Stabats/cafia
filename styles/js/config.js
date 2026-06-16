@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "10LJ9oNXrhu4-7gg07eWYRzuVVpbK3bq1X2GcS3yYrVg",
+  id: "13VvVaBnGW3p6n-t7BSPnsmMa3vSBuI7n1cQay2w8AWQ",
 
   pages: {
     masterlist:    "masterlist",
@@ -45,9 +45,9 @@ charadex.sheet = {
   options: {
 
     designTypes: [],
-    statuses: ['All', 'Active', 'Haitus', 'Inactive'],
+    statuses: ['All', 'Contestant', 'Departed'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'PC', 'NPC', 'BPNC'],
+    species: ['All', 'PC', 'NPC'],
     itemTypes: ['All', 'Currency', 'Ingredents', 'Plots', 'Homes', 'Decor', 'Misc'],
     elementTypes: ['All', 'Aether', 'Air', 'Earth', 'Fire', 'Water'],
     level: ['All', '1', '2', '3', '4', '5', '6'],
