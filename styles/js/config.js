@@ -43,7 +43,7 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
+    jobs: ['All', 'Job1', 'Job2'],
     statuses: ['All', 'Active', 'Departed', '???'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
     species: ['All', 'PC', 'NPC'],
@@ -377,7 +377,7 @@ charadex.page.masterlist = {
   filters: {
     toggle: true,
     parameters: {
-      'Design Type': charadex.sheet.options.designTypes,
+      'Design Type': charadex.sheet.options.jobs,
       'Status': charadex.sheet.options.statuses,
       'Rarity': charadex.sheet.options.rarity,
     }
