@@ -15,9 +15,9 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Golden Search",
-  url: "https://stabats.github.io/Golden-Search/",
-  description: `An ARPG about (maybe) saving the world.`
+  title: "Cafia",
+  url: "https://stabats.github.io/cafia/",
+  description: `A murder mystery roleplay.`
 }
 
 /* ==================================================================== */
