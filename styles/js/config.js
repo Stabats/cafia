@@ -38,7 +38,7 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
-    seekers:       "seekers",
+    players:       "players",
     badges:        "badges",
   },
 
@@ -301,9 +301,9 @@ charadex.page.staff = {
 
 /* Staff
 /* --------------------------------------------------------------- */
-charadex.page.seekers = {
+charadex.page.players = {
 
-  sheetPage: charadex.sheet.pages.seekers,
+  sheetPage: charadex.sheet.pages.players,
   sitePage: 'inventories',
   dexSelector: 'charadex',
   profileProperty: 'username',
@@ -622,8 +622,8 @@ charadex.page.index = {
       amount: 6,
   },
 
-  seekers: {
-    ... charadex.page.seekers,
+  players: {
+    ... charadex.page.players,
       dexSelector: 'seeker',
       amount: 6,
   }
