@@ -38,7 +38,7 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
-    players:       "players",
+    players:       "contestant",
     badges:        "badges",
   },
 
