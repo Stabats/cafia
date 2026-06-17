@@ -44,12 +44,10 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: [],
+    designTypes: ['All', 'Official Design'],
     statuses: ['All', 'Contestant', 'Departed', '???'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
     species: ['All', 'PC', 'NPC'],
-    itemTypes: ['All', 'Currency', 'Ingredents', 'Plots', 'Homes', 'Decor', 'Misc'],
-    elementTypes: ['All', 'Aether', 'Air', 'Earth', 'Fire', 'Water'],
+    itemTypes: ['All', 'Currency', 'Ingredents', 'Plots', 'Homes', 'Decor', 'Misc']
   }
 
 }
