@@ -41,7 +41,7 @@ charadex.sheet = {
 
   options: {
 
-    designTypes: ['All', 'Official Design'],
+    designTypes: ['All', 'Official Design', 'Guest Design',],
     statuses: ['All', 'Contestant', 'Departed', '???'],
     species: ['All', 'PC', 'NPC'],
     itemTypes: ['All', 'Currency', 'Ingredents', 'Plots', 'Homes', 'Decor', 'Misc']
