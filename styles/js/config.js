@@ -34,12 +34,9 @@ charadex.sheet = {
     inventory:     "inventory",
     inventoryLog:  "inventory log",
     items:         "items",
-    powers:        "powers",
-    prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
-    players:       "contestants",
-    badges:        "badges",
+    seekers:       "seekers",
   },
 
   options: {
@@ -107,149 +104,6 @@ charadex.page.items = {
 
 };
 
-/* Badge Catalogue
-/* --------------------------------------------------------------- */
-charadex.page.badges = {
-
-  sheetPage: charadex.sheet.pages.badges,
-  sitePage: 'badges',
-  dexSelector: 'charadex',
-  profileProperty: 'badge',
-
-  sort: {
-    toggle: true,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 24,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-      'Type': charadex.sheet.options.badgeTypes,
-      'Rarity': charadex.sheet.options.rarity,
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.badgeTypes,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Badge']
-  },
-
-  prevNext: {
-    toggle: true,
-  },
-
-};
-
-/* powers
-/* --------------------------------------------------------------- */
-charadex.page.powers = {
-
-  sheetPage: charadex.sheet.pages.powers,
-  sitePage: 'powers',
-  dexSelector: 'charadex',
-  profileProperty: 'power',
-
-  sort: {
-    toggle: true,
-    key: "id",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 24,
-  },
-
-  filters: {
-    toggle: true,
-    parameters: {
-    }
-  },
-
-  fauxFolder: {
-    toggle: true,
-    folderProperty: 'Type',
-    parameters: charadex.sheet.options.elementTypes,
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Type', 'Level']
-  },
-
-  prevNext: {
-    toggle: true,
-  },
-
-};
-
-
-/* Prompts
-/* --------------------------------------------------------------- */
-charadex.page.prompts = {
-
-  sheetPage: charadex.sheet.pages.prompts,
-  sitePage: 'prompts',
-  dexSelector: 'charadex',
-  profileProperty: 'title',
-
-  sort: {
-    toggle: true,
-    key: "enddate",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 12,
-  },
-
-  filters: {
-    toggle: false,
-    parameters: {
-      'TBA': [],
-    }
-  },
-
-  fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: false,
-    parameters: ['Title']
-  },
-
-  prevNext: {
-    toggle: true,
-  },
-
-};
-
-
 /* Staff
 /* --------------------------------------------------------------- */
 charadex.page.staff = {
@@ -299,9 +153,9 @@ charadex.page.staff = {
 
 /* Staff
 /* --------------------------------------------------------------- */
-charadex.page.players = {
+charadex.page.seekers = {
 
-  sheetPage: charadex.sheet.pages.players,
+  sheetPage: charadex.sheet.pages.seekers,
   sitePage: 'inventories',
   dexSelector: 'charadex',
   profileProperty: 'username',
@@ -325,24 +179,6 @@ charadex.page.players = {
       'TBA': [],
     }
   },
-
-  fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: false,
-    parameters: ['Username']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-};
 
 /* FAQ
 /* --------------------------------------------------------------- */
