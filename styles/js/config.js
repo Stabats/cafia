@@ -624,7 +624,7 @@ charadex.page.index = {
 
   players: {
     ... charadex.page.players,
-      dexSelector: 'seeker',
+      dexSelector: 'players',
       amount: 6,
   }
 
