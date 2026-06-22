@@ -28,11 +28,11 @@ body {
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: #ffffff;
+  --cd-content-background-color: rgb(70,49,79);
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/235c2dfc-2404-4da8-a7cb-7a475058fe3c/d9csa5h-663e09e8-b3ad-4cdf-82de-88a3d867cb07.png/v1/fill/w_1024,h_683,q_80,strp/__cafia_application_form___by_stabats_d9csa5h-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6Ii9mLzIzNWMyZGZjLTI0MDQtNGRhOC1hN2NiLTdhNDc1MDU4ZmUzYy9kOWNzYTVoLTY2M2UwOWU4LWIzYWQtNGNkZi04MmRlLTg4YTNkODY3Y2IwNy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.TPinPepX2KfLoNoufGL-kzAJEMgZLqsA7HIF1E9CncQ);
+  --cd-body-background-image: url(https://media.gettyimages.com/id/156325442/photo/murderer-back-on-the-crime-scene.jpg?s=612x612&w=0&k=20&c=fQE_92cqLwGq_3SWOFOPvjn3qDZ9x46X7SGoPuoBPFQ=);
 
   /* ============================================================= */
   /* Text
