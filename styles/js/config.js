@@ -562,13 +562,13 @@ charadex.page.index = {
   staff: {
     ... charadex.page.staff,
     dexSelector: 'staff',
-    amount: 6,
+    amount: 1,
   },
 
   designs: {
     ... charadex.page.masterlist,
     dexSelector: 'design',
-    amount: 4,
+    amount: 2,
   }
 
 };
