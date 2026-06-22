@@ -27,9 +27,9 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #f8f8f8;
-  --cd-content-background-color: rgb(129,71,128);
-  --cd-faded-background-color: #f8f8f8;
+  --cd-body-background-color: #3E3144;
+  --cd-content-background-color: rgb(70567B);
+  --cd-faded-background-color: #3E3144;
 
   /* Background Extras */
   --cd-body-background-image: url(https://media.gettyimages.com/id/156325442/photo/murderer-back-on-the-crime-scene.jpg?s=612x612&w=0&k=20&c=fQE_92cqLwGq_3SWOFOPvjn3qDZ9x46X7SGoPuoBPFQ=);
@@ -37,8 +37,8 @@ body {
   /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color: #222222;
-  --cd-faded-text-color: #808080;
+  --cd-body-text-color: #261D2A;
+  --cd-faded-text-color: #DED5E2;
 
   /* ============================================================= */
   /* Borders
@@ -51,7 +51,7 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color: #222222;
+  --cd-navbar-background-color: black;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
   --cd-navbar-text-color: var(--cd-content-background-color);
@@ -125,7 +125,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color: #4c8ebd;
+  --cd-link-text-color: rgb(138,50,50);
   --cd-link-text-color-hover: var(--cd-secondary-color);
 
 
