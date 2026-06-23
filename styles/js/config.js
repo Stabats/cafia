@@ -562,7 +562,7 @@ charadex.page.index = {
   staff: {
     ... charadex.page.staff,
     dexSelector: 'staff',
-    amount: 1,
+    amount: 3,
   },
 
   designs: {
