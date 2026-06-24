@@ -45,7 +45,7 @@ charadex.sheet = {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Active', 'Departed', '???'],
-    rarity: ['All', 'Village', 'Prize', '???', 'Very Rare', 'Legendary'],
+    rarity: ['All', 'Village', 'Prize', '???'],
     species: ['All', 'PC', 'NPC'],
     itemTypes: ['All', 'Vote', 'Stat', 'Action', 'Roll', 'Important'],
     traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
@@ -87,7 +87,7 @@ charadex.page.items = {
     toggle: true,
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      'Location': charadex.sheet.options.rarity,
     }
   },
 
@@ -100,7 +100,7 @@ charadex.page.items = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Item', 'Rarity']
+    parameters: ['All', 'Item', 'Location']
   },
 
   prevNext: {
@@ -136,7 +136,7 @@ charadex.page.traits = {
     toggle: true,
     parameters: {
       'Type': charadex.sheet.options.traitTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      'Location': charadex.sheet.options.rarity,
     }
   },
 
@@ -149,7 +149,7 @@ charadex.page.traits = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Trait', 'Rarity']
+    parameters: ['All', 'Trait', 'Location']
   },
 
   prevNext: {
@@ -376,7 +376,7 @@ charadex.page.masterlist = {
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
       'Status': charadex.sheet.options.statuses,
-      'Rarity': charadex.sheet.options.rarity,
+      'Location': charadex.sheet.options.rarity,
     }
   },
 
@@ -540,7 +540,7 @@ charadex.page.inventory = {
       toggle: true,
       parameters: {
         'Type': charadex.sheet.options.itemTypes,
-        'Rarity': charadex.sheet.options.rarity,
+        'Location': charadex.sheet.options.rarity,
       }
     },
 
