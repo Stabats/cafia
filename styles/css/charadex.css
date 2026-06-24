@@ -28,8 +28,8 @@ body {
   /* Backgrounds
   ================================================================ */
   --cd-body-background-color: #3E3144;
-  --cd-content-background-color: #70567B;
-  --cd-faded-background-color: rgb(89,67,99);
+  --cd-content-background-color: rgb(89,67,99);
+  --cd-faded-background-color: #70567B;
 
   /* Background Extras */
   --cd-body-background-image: url(https://media.gettyimages.com/id/156325442/photo/murderer-back-on-the-crime-scene.jpg?s=612x612&w=0&k=20&c=fQE_92cqLwGq_3SWOFOPvjn3qDZ9x46X7SGoPuoBPFQ=);
